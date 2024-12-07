@@ -65,7 +65,7 @@ const ViewProfile = () => {
                 <div className="col-md-8">{profile.role}</div>
               </div>
               <div className="row mb-3">
-                <div className="col-md-4 font-weight-bold">Master Admin:</div>
+                <div className="col-md-4 font-weight-bold">HOD:</div>
                 <div className="col-md-8">{profile.role === 'hod' ? "Yes" : "No"}</div>
               </div>
             </>

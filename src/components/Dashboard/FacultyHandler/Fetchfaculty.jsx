@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 import axios from "axios";
 import { Modal, Button, Form, Alert, Container, Row, Col, Card, Spinner } from "react-bootstrap";
 import { BsPencil, BsTrash } from "react-icons/bs";
@@ -112,11 +112,11 @@ const FetchFaculty = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/hod/delete/${facultyId}`, {
+      await axios.delete(`http://localhost:5000/api/hod/remove/${facultyId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
-      setMessage('Faculty deleted successfully');
+      setMessage('Faculty removal request has been sent  successfully');
       setMessageVariant('success');
       fetchFaculties();
     } catch (error) {

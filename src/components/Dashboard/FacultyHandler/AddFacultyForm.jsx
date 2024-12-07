@@ -131,7 +131,7 @@ const AddFaculty = () => {
           sx={{ width: '100%' }}
         >
           <MenuItem value="create">Create</MenuItem>
-          <MenuItem value="update">Update</MenuItem>
+          {/* <MenuItem value="update">Update</MenuItem> */}
         </TextField>
         <TextField
           label="Action"
@@ -145,7 +145,7 @@ const AddFaculty = () => {
           sx={{ width: '100%' }}
         >
           <MenuItem value="create">Create</MenuItem>
-          <MenuItem value="update">Update</MenuItem>
+          {/* <MenuItem value="update">Update</MenuItem> */}
         </TextField>
 
         <Button
