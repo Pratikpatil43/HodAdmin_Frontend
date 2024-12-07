@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const ViewProfile = () => {
+const Viewprofile = () => {
   const [profile, setProfile] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -78,4 +78,4 @@ const ViewProfile = () => {
   );
 };
 
-export default ViewProfile;
+export default Viewprofile;

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthForm from './pages/AuthForm';
 import Dashboard from './pages/Dashboard';
-import ViewProfile from './components/Dashboard/masterAdmin/viewProfile';
+import Viewprofile from './components/Dashboard/HOD/Viewprofile';
 
 const App = () => {
     return (
@@ -10,7 +10,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<AuthForm type="register" />} />
                 <Route path="/login" element={<AuthForm type="login" />} />
-                <Route path="/profile" element={<ViewProfile />} />
+                <Route path="/profile" element={<Viewprofile />} />
                 {/* Dashboard with nested routes */}
                 <Route path="/dashboard/*" element={<Dashboard />} />
             </Routes>
