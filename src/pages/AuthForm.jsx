@@ -23,7 +23,7 @@ const HodLogin = () => {
     setError(null);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/hod/login", {
+      const response = await axios.post("https://attendancetracker-backend1.onrender.com/api/hod/login", {
         username,
         password,
       });

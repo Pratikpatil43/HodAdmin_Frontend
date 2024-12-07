@@ -7,6 +7,7 @@ import FetchFaculty from '../components/Dashboard/FacultyHandler/Fetchfaculty';
 
 
 
+
 const Dashboard = () => {
     return (
         <Box sx={{ display: 'flex' }}>
