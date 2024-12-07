@@ -26,7 +26,7 @@ const FetchFaculty = () => {
         throw new Error("No authentication token found.");
       }
 
-      const response = await axios.get("https://attendancetracker-backend1.onrender.com/api/hod/getFaculty", {
+      const response = await axios.get("/api/hod/getFaculty", {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -78,7 +78,7 @@ const FetchFaculty = () => {
     };
 
     try {
-      const response = await axios.put(`https://attendancetracker-backend1.onrender.com/api/hod/update/${selectedFaculty.id}`, updatedFacultyData, {
+      const response = await axios.put(`/api/hod/update/${selectedFaculty.id}`, updatedFacultyData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMessage(response.data.message);
@@ -112,7 +112,7 @@ const FetchFaculty = () => {
     }
 
     try {
-      await axios.delete(`https://attendancetracker-backend1.onrender.com/api/hod/remove/${facultyId}`, {
+      await axios.delete(`/api/hod/remove/${facultyId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
 

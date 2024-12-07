@@ -35,7 +35,7 @@ const AddFaculty = () => {
     try {
       const token = sessionStorage.getItem('token'); // Get the token from session storage
 
-      const response = await axios.post('https://attendancetracker-backend1.onrender.com/api/hod/addfaculty', formData, {
+      const response = await axios.post('/api/hod/addfaculty', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
